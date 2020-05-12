@@ -2,7 +2,7 @@
 % !TeX program = xelatex
 % !TeX spellcheck = en_US
 
-\documentclass[degree=doctor]{ustcthesis}
+\documentclass[degree=bachelor,language=chinese,output=electronic]{ustcthesis}
 % degree    = doctor|master|bachelor
 % language  = chinese|english
 
@@ -29,11 +29,13 @@
 \copyrightpage
 
 \frontmatter
-\input{chapters/abstract.tex}
+
+\input{chapters/acknowledgements.tex}
 \tableofcontents
+\input{chapters/abstract.tex}
 % \listoffigures
 % \listoftables
-\input{chapters/notation.tex}
+% \input{chapters/notation.tex}
 
 \mainmatter
 \input{chapters/intro.tex}
@@ -50,7 +52,7 @@
 \appendix
 \input{chapters/complementary.tex}
 
-\input{chapters/acknowledgements.tex}
+
 \input{chapters/publications.tex}
 
 \end{document}
